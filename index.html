@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple (Clone)</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- This links an icon library so we can use icons like the search and cart icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="outer-wrapper">
+    <!-- The header holds the navigation bar at the top of the page -->
+    <header class="header-wrapper">
+        <div class="internal-wrapper">
+            <nav class="header-links-wrapper">
+                <ul>
+                    <li class="logo-link"><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">TV & Home</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li class="search-link"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="cart-link"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li class="menu-link"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- (1) This is the first big banner image the user sees when the page loads -->
+    <section class="hero-section iphone">
+        <div class="hero-content">
+            <h2 class="product-title">iPhone</h2>
+            <h3 class="brief-description">Meet the latest iPhone lineup.</h3>
+            <div class="links-wrapper">
+                <a href="#" class="btn-primary">Learn more</a>
+                <a href="#" class="btn-secondary">Shop iPhone</a>
+            </div>
+        </div>        
+    </section>
+
+    <!-- (2)Second banner section promoting a Father's Day gift idea -->
+    <section class="hero-section fathers-day">
+        <div class="hero-content">
+            <h2 class="product-title">Father's Day</h2>
+            <h3 class="brief-description">June 21 is coming up. Find the perfect gift.</h3>
+            <div class="links-wrapper">
+                <a href="#" class="btn-primary">Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- (3) Third banner section aimed at students going to college -->
+    <section class="hero-section college">
+        <div class="hero-content">
+            <h2 class="product-title">Apple for College</h2>
+            <h3 class="brief-description">Mac and iPad. Major in any field.</h3>
+            <div class="links-wrapper">
+                <a href="#" class="btn-primary">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- This grid shows multiple product cards side by side using CSS Grid -->
+
+    <section class="bento-grid">
+        <!-- First card in the grid, showing the MacBook Air product -->
+        <div class="grid-item macbook-air">
+            <div class="grid-content">
+                <h2 class="grid-title">MacBook Air</h2>
+                <p class="grid-desc">Now supercharged by M5.</p>
+                <div class="links-wrapper">
+                    <a href="#" class="btn-primary">Learn more</a>
+                    <a href="#" class="btn-secondary">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second card in the grid, showing the iPad Air product -->
+        <div class="grid-item ipad-air">
+            <div class="grid-content">
+                <h2 class="grid-title logo-title"><img src="images/Logos and Icons/ipad-air-logo.png" alt="iPad Air"></h2>
+                <p class="grid-desc">Now supercharged by M4.</p>
+                <div class="links-wrapper">
+                    <a href="#" class="btn-primary">Learn more</a>
+                    <a href="#" class="btn-secondary">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third card in the grid, showing the MacBook Pro product -->
+        <div class="grid-item macbook-pro">
+            <div class="grid-content dark-theme">
+                <h2 class="grid-title">MacBook Pro</h2>
+                <p class="grid-desc">Now with M5, M5 Pro, and M5 Max.</p>
+                <div class="links-wrapper">
+                    <a href="#" class="btn-primary">Learn more</a>
+                    <a href="#" class="btn-secondary">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth card in the grid, showing the Apple Watch -->
+        <div class="grid-item watch">
+            <div class="grid-content">
+                <h2 class="grid-title logo-title"><img src="images/Logos and Icons/apple-watch-logo.png" alt="Apple Watch Series 11"></h2>
+                <p class="grid-desc">The ultimate way to watch your health.</p>
+                <div class="links-wrapper">
+                    <a href="#" class="btn-primary">Learn more</a>
+                    <a href="#" class="btn-secondary">Buy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth card in the grid, promoting the Apple Card credit card -->
+         <div class="grid-item card">
+            <div class="grid-content">
+                <h2 class="grid-title logo-title"><img src="images/Logos and Icons/apple-card-logo.png" alt="Apple Card"></h2>
+                <p class="grid-desc">Get up to 3% Daily Cash back with every purchase.</p>
+                <div class="links-wrapper">
+                    <a href="#" class="btn-primary">Learn more</a>
+                    <a href="#" class="btn-secondary">Apply now</a>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Sixth card in the grid, about trading in an old device for credit -->
+        <div class="grid-item trade-in">
+            <div class="grid-content">
+                <h2 class="grid-title logo-title"><img src="images/Logos and Icons/trade-in-logo.png" alt="Apple Trade In"></h2>
+                <p class="grid-desc">Get up to $195-$695 in credit when you trade in iPhone 13 or higher.</p>
+                <div class="links-wrapper">
+                    <a href="#" class="btn-primary">Get your estimate</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- This section shows scrolling entertainment content like shows and music -->
+
+    <section class="entertainment-section">
+        <h2 class="entertainment-title">Endless entertainment.</h2>
+
+        <div class="entertainment-gallery" aria-label="Apple entertainment gallery">
+            <div class="entertainment-showcase" aria-label="Apple TV featured entertainment">
+                <div class="entertainment-track showcase-track">
+                <article class="showcase-card" id="entertainment-slide-1">
+                    <img src="images/Banners/CAPE-FEAR-BANNER.jpg" alt="Cape Fear on Apple TV">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/CAPE-FEAR-LOGO.png" alt="Cape Fear">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Thriller</span>
+                            <p>Fear takes hold.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" id="entertainment-slide-2">
+                    <img src="images/Banners/WIDOWS-BAY-BANNER.jpg" alt="Widows Bay on Apple TV">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/WIDOWS-BAY-LOGO.png" alt="Widows Bay">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Mystery</span>
+                            <p>Welcome to the island. Just don't ask too many questions.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" id="entertainment-slide-3">
+                    <img src="images/Banners/F1-BANNER.jpg" alt="F1 on Apple TV">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/F1-LOGO.png" alt="F1 The Movie">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Sports</span>
+                            <p>Every Grand Prix, live and on demand.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" id="entertainment-slide-4">
+                    <img src="images/Banners/MARGO-MONEY-BANNER.jpg" alt="Margo's Got Money Troubles on Apple TV">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/MARGO-MONEY-LOGO.png" alt="Margo's Got Money Troubles">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Drama</span>
+                            <p>Is it a crime to want more?</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" aria-hidden="true">
+                    <img src="images/Banners/CAPE-FEAR-BANNER.jpg" alt="">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/CAPE-FEAR-LOGO.png" alt="">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Thriller</span>
+                            <p>Fear takes hold.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" aria-hidden="true">
+                    <img src="images/Banners/WIDOWS-BAY-BANNER.jpg" alt="">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/WIDOWS-BAY-LOGO.png" alt="">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Mystery</span>
+                            <p>Welcome to the island. Just don't ask too many questions.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" aria-hidden="true">
+                    <img src="images/Banners/F1-BANNER.jpg" alt="">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/F1-LOGO.png" alt="">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Sports</span>
+                            <p>Every Grand Prix, live and on demand.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-card" aria-hidden="true">
+                    <img src="images/Banners/MARGO-MONEY-BANNER.jpg" alt="">
+                    <div class="showcase-content">
+                        <img class="showcase-logo" src="images/Logos and Icons/MARGO-MONEY-LOGO.png" alt="">
+                        <div class="showcase-copy">
+                            <a href="#" class="watch-button">Stream now</a>
+                            <span>Drama</span>
+                            <p>Is it a crime to want more?</p>
+                        </div>
+                    </div>
+                </article>
+                </div>
+            </div>
+
+            <div class="entertainment-strip" aria-label="Apple services">
+                <div class="entertainment-track service-track">
+                <a href="#" class="service-card">
+                    <img src="images/Cards/kitty.jpg" alt="Hello Kitty Island Adventure">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>Hello Kitty Island Adventure</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <img src="images/Cards/sabrina.jpg" alt="Sabrina Carpenter interview">
+                    <div>
+                        <span>Music</span>
+                        <strong>Sabrina Carpenter: The Zane Lowe Interview</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <img src="images/Cards/meditation.jpg" alt="Apple Fitness Plus meditation">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>30 Days of Gratitude and Kindness</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <img src="images/Cards/playground.jpg" alt="PowerWash Simulator">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>PowerWash Simulator</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <img src="images/Cards/list.jpg" alt="A-List Pop playlist">
+                    <div>
+                        <span>Music</span>
+                        <strong>A-List Pop</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card">
+                    <img src="images/Cards/sports.jpg" alt="Apple Fitness Plus workout">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>Strength with Jenn</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/kitty.jpg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>Hello Kitty Island Adventure</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/sabrina.jpg" alt="">
+                    <div>
+                        <span>Music</span>
+                        <strong>Sabrina Carpenter: The Zane Lowe Interview</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/meditation.jpg" alt="">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>30 Days of Gratitude and Kindness</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/playground.jpg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>PowerWash Simulator</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/list.jpg" alt="">
+                    <div>
+                        <span>Music</span>
+                        <strong>A-List Pop</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/sports.jpg" alt="">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>Strength with Jenn</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/kitty.jpg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>Hello Kitty Island Adventure</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/sabrina.jpg" alt="">
+                    <div>
+                        <span>Music</span>
+                        <strong>Sabrina Carpenter: The Zane Lowe Interview</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/meditation.jpg" alt="">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>30 Days of Gratitude and Kindness</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/playground.jpg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>PowerWash Simulator</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/list.jpg" alt="">
+                    <div>
+                        <span>Music</span>
+                        <strong>A-List Pop</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/sports.jpg" alt="">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>Strength with Jenn</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/kitty.jpg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>Hello Kitty Island Adventure</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/sabrina.jpg" alt="">
+                    <div>
+                        <span>Music</span>
+                        <strong>Sabrina Carpenter: The Zane Lowe Interview</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/meditation.jpg" alt="">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>30 Days of Gratitude and Kindness</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/playground.jpg" alt="">
+                    <div>
+                        <span>Arcade</span>
+                        <strong>PowerWash Simulator</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/list.jpg" alt="">
+                    <div>
+                        <span>Music</span>
+                        <strong>A-List Pop</strong>
+                    </div>
+                </a>
+
+                <a href="#" class="service-card" aria-hidden="true">
+                    <img src="images/Cards/sports.jpg" alt="">
+                    <div>
+                        <span>Fitness+</span>
+                        <strong>Strength with Jenn</strong>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-dots" aria-label="Entertainment carousel navigation">
+            <a class="active" href="#entertainment-slide-1" aria-label="Show entertainment set 1"></a>
+            <a href="#entertainment-slide-2" aria-label="Show entertainment set 2"></a>
+            <a href="#entertainment-slide-3" aria-label="Show entertainment set 3"></a>
+            <a href="#entertainment-slide-4" aria-label="Show entertainment set 4"></a>
+        </div>
+
+    </section>
+        <!-- The footer sits at the bottom and has links, legal text, and copyright info -->
+         
+    <footer class="footer-wrapper">
+        <div class="internal-wrapper">
+            <div class="footer-notes">
+                <ol>
+                    <li>Subject to credit approval. Special Apple Card offers may require qualifying purchases and are available for a limited time. Additional terms and exclusions apply.</li>
+                    <li>Trade-in values vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. Restrictions and limitations may apply.</li>
+                    <p>To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS.
+                        Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+                    <p>Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.</p>
+                    <p>All communications from Apple and Goldman Sachs Bank USA about Apple Card (including transactional and marketing communications) and customer service support are available in English.
+                        Certain communications about Apple Card can be viewed in another language depending on your device language settings. If you reside in the U.S. Virgin Islands, American Samoa, Guam, Northern Mariana Islands, or U.S. Minor Outlying Islands, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.</p>
+                    <p>Learn more about how Apple Card applications are evaluated at <a href="#">support.apple.com/kb/HT209218</a>.</p>
+                    <p>A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV. </p>
+                    <p>Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.</p>
+                </ol>
+            </div>
+
+            <nav class="footer-directory" aria-label="Apple footer directory">
+                <div class="footer-directory-column">
+                    <h3>Shop and Learn</h3>
+                    <ul>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">TV & Home</a></li>
+                        <li><a href="#">AirTag</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                    <h3>Apple Wallet</h3>
+                    <ul>
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Apple Card</a></li>
+                        <li><a href="#">Apple Pay</a></li>
+                        <li><a href="#">Apple Cash</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-directory-column">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#">Manage Your Apple Account</a></li>
+                        <li><a href="#">Apple Store Account</a></li>
+                        <li><a href="#">iCloud.com</a></li>
+                    </ul>
+                    <h3>Entertainment</h3>
+                    <ul>
+                        <li><a href="#">Apple One</a></li>
+                        <li><a href="#">Apple TV</a></li>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                        <li><a href="#">Apple Fitness+</a></li>
+                        <li><a href="#">Apple News+</a></li>
+                        <li><a href="#">Apple Podcasts</a></li>
+                        <li><a href="#">Apple Books</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-directory-column">
+                    <h3>Apple Store</h3>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Genius Bar</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Group Reservations</a></li>
+                        <li><a href="#">Apple Camp</a></li>
+                        <li><a href="#">Apple Store App</a></li>
+                        <li><a href="#">Certified Refurbished</a></li>
+                        <li><a href="#">Apple Trade In</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Carrier Deals at Apple</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shopping Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-directory-column">
+                    <h3>For Business</h3>
+                    <ul>
+                        <li><a href="#">Apple and Business</a></li>
+                        <li><a href="#">Shop for Business</a></li>
+                    </ul>
+                    <h3>For Education</h3>
+                    <ul>
+                        <li><a href="#">Apple and Education</a></li>
+                        <li><a href="#">Shop for K-12</a></li>
+                        <li><a href="#">Shop for College</a></li>
+                    </ul>
+                    <h3>For Healthcare</h3>
+                    <ul>
+                        <li><a href="#">Apple and Healthcare</a></li>
+                    </ul>
+                    <h3>For Government</h3>
+                    <ul>
+                        <li><a href="#">Apple and Government</a></li>
+                        <li><a href="#">Shop for Veterans and Military</a></li>
+                        <li><a href="#">Shop for State and Local Employees</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-directory-column">
+                    <h3>Apple Values</h3>
+                    <ul>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Inclusion and Diversity</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Racial Equity and Justice</a></li>
+                        <li><a href="#">Supply Chain Innovation</a></li>
+                    </ul>
+                    <h3>About Apple</h3>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Apple Leadership</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Ethics & Compliance</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footer-shop">
+                More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call <a href="#">1-800-MY-APPLE</a> (1-800-692-7753).
+            </div>
+
+            <div class="footer-legal">
+                <p>Copyright &copy; 2026 Apple Inc. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Sales and Refunds</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+                <a href="#" class="footer-locale">United States</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

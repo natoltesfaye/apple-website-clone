@@ -1,0 +1,746 @@
+/* Remove default spacing and make sizing easier to work with on every element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.watch img{
+    max-width: 50%;
+    height: auto;
+}
+
+/* Centers the page content and keeps it from getting too wide on big screens */
+.internal-wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+/* Styles the sticky top bar that stays visible when you scroll down the page */
+.header-wrapper {
+    background: rgba(251, 251, 253, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.header-wrapper .internal-wrapper {
+    max-width: 1024px;
+    padding: 0 20px;
+}
+
+.header-links-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 44px;
+}
+
+.header-links-wrapper ul li a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+.header-links-wrapper ul li a:hover {
+    opacity: 1;
+}
+
+.logo-link a,
+.search-link a,
+.cart-link a,
+.menu-link a {
+    width: 14px;
+    display: block;
+    font-size: 14px;
+}
+
+.menu-link {
+    display: none;
+}
+
+/* Controls the layout and text size for the big banner sections at the top */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 54px 0 0;
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 12px solid #fff;
+}
+
+.hero-section:first-of-type {
+    margin-top: 44px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07143;
+    letter-spacing: 0;
+}
+
+.brief-description {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 6px;
+    line-height: 1.14286;
+    letter-spacing: 0;
+}
+
+/* Styles the "Learn more" and "Buy" buttons that users click to take action */
+.links-wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 11px 21px;
+    border-radius: 980px;
+    font-size: 17px;
+    line-height: 1.17648;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #0071e3;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0073ed;
+}
+
+.btn-secondary {
+    border: 1px solid #0071e3;
+    color: #0071e3;
+}
+
+.btn-secondary:hover {
+    background: #0071e3;
+    color: white;
+}
+
+/* Changes text to white so it is readable on dark background cards */
+.dark-theme {
+    color: #f5f5f7;
+}
+
+/* Sets the background image for each hero banner section */
+.iphone {
+    background-color: #fbfbfd;
+    background-image: url('../images/Banners/hero_iphone_family.jpg');
+    background-position: center bottom;
+}
+
+.iphone .hero-content {
+    min-height: 190px;
+    position: relative;
+    z-index: 3;
+}
+
+.iphone .product-title {
+    font-size: 60px;
+}
+
+.iphone .brief-description {
+    color: #1d1d1f;
+}
+
+.fathers-day {
+    background-image: url('../images/Banners/fathers-day-banner.jpg');
+    background-position: center bottom;
+}
+
+.college {
+    background-image: url('../images/Banners/mac-and-ipad-banner.jpg');
+    background-position: center bottom;
+}
+
+/* Creates the two-column product card grid layout using CSS Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 12px 12px;
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+.grid-item {
+    height: 580px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 46px 36px 0;
+    background-color: #fbfbfd;
+    overflow: hidden;
+}
+
+.grid-content {
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.logo-title {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title img {
+    display: block;
+    max-width: 230px;
+    max-height: 48px;
+    object-fit: contain;
+}
+
+.grid-subtitle {
+    font-size: 12px;
+    color: #bf4800;
+    font-weight: 600;
+    display: block;
+    margin-top: -5px;
+}
+
+.grid-desc {
+    max-width: 350px;
+    font-size: 21px;
+    color: #1d1d1f;
+    line-height: 1.19048;
+    margin: 6px 0 0;
+}
+
+.grid-item .links-wrapper {
+    margin-top: 14px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.grid-item .btn-primary,
+.grid-item .btn-secondary {
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 1.28577;
+}
+
+/* Assigns the background image to each individual product card */
+
+.card {
+    background-image: url(https://www.apple.com/v/home/images/apple-card-airpods/a/promo_apple_card_airpods__dpbuw4e90126_large_2x.jpg);
+}
+
+.trade-in {
+    background-image: url(https://www.apple.com/v/home/images/iphone-tradein/a/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg);
+}
+.macbook-air { background-image: url('../images/banners/macbook-promo-banner.jpg'); }
+.ipad-air { background-image: url('../images/banners/ipads-banner.jpg'); }
+.watch { background-image: url(https://www.apple.com/v/home/images/apple-watch-series-11/a/promo_apple_watch_series_11__gnlwqxe1jlu2_large_2x.jpg); }
+.macbook-pro { 
+    background-color: #000;
+    background-image: url(https://www.apple.com/v/home/images/macbook-pro/a/promo_macbook_pro__c9td9w1mc8ia_large_2x.jpg); 
+}
+
+.macbook-pro .grid-desc {
+    color: #f5f5f7;
+}
+
+/* Styles the scrolling entertainment section with TV shows and music cards */
+.entertainment-section {
+    background: #f5f5f7;
+    padding: 24px 0 34px;
+    overflow: hidden;
+}
+
+.entertainment-title {
+    color: #1d1d1f;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.entertainment-gallery {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0 12px;
+}
+
+.entertainment-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.entertainment-showcase,
+.entertainment-strip {
+    width: max-content;
+}
+
+.entertainment-track {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+}
+
+.showcase-card {
+    position: relative;
+    flex: 0 0 min(980px, 82vw);
+    height: 520px;
+    overflow: hidden;
+    background: #000;
+    scroll-snap-align: center;
+}
+
+.showcase-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.showcase-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.76) 100%);
+}
+
+.showcase-content {
+    position: absolute;
+    left: 44px;
+    right: 44px;
+    bottom: 34px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 28px;
+    color: #fff;
+}
+
+.showcase-logo {
+    max-width: 220px;
+    max-height: 96px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.showcase-copy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    min-width: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+}
+
+.showcase-copy span {
+    font-weight: 700;
+}
+
+.showcase-copy p {
+    max-width: 360px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.watch-button {
+    flex: 0 0 auto;
+    background: #fff;
+    color: #1d1d1f;
+    border-radius: 980px;
+    padding: 11px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.entertainment-strip {
+    margin-top: 12px;
+}
+
+.service-card {
+    flex: 0 0 315px;
+    min-height: 178px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    scroll-snap-align: start;
+    color: #fff;
+    text-decoration: none;
+    background: #1d1d1f;
+}
+
+.service-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.72) 100%);
+}
+
+.service-card div {
+    position: relative;
+    z-index: 1;
+    padding: 0 18px 17px;
+}
+
+.service-card span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.service-card strong {
+    display: block;
+    font-size: 17px;
+    line-height: 1.16;
+    font-weight: 600;
+}
+
+.service-card:hover img {
+    transform: scale(1.04);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.carousel-dots a {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #86868b;
+    opacity: 0.38;
+    display: block;
+}
+
+.carousel-dots a.active,
+.carousel-dots a:hover,
+.carousel-dots a:focus-visible {
+    opacity: 0.95;
+    background: #1d1d1f;
+}
+
+.carousel-dots a:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 4px;
+}
+
+/* Styles the bottom footer area with links, legal text, and copyright info */
+.footer-wrapper {
+    background-color: #f5f5f7;
+    color: #545456;
+    font-size: 12px;
+    line-height: 1.333;
+    padding: 17px 0 21px;
+}
+
+.footer-wrapper .internal-wrapper {
+    max-width: 980px;
+}
+
+.footer-wrapper a {
+    color: #4f4e50;
+    text-decoration: none;
+}
+
+.footer-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.footer-notes {
+    border-bottom: 1px solid #d2d2d7;
+    color: #6e6f71;
+    padding-bottom: 11px;
+}
+
+.footer-notes ol {
+    list-style: decimal inside;
+    margin: 0;
+    padding-left: 0;
+}
+
+.footer-notes ol li {
+    padding-left: 0;
+}
+
+.footer-notes li,
+.footer-notes p {
+    margin-bottom: 9px;
+}
+
+.footer-directory {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    padding: 20px 0 24px;
+}
+
+.footer-directory h3 {
+    color: #1d1d1f;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 9px;
+}
+
+.footer-directory h3:not(:first-child) {
+    margin-top: 24px;
+}
+
+.footer-directory ul,
+.footer-legal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-directory li {
+    margin-bottom: 9px;
+}
+
+.footer-shop {
+    border-bottom: 1px solid #d2d2d7;
+    color: #6e6f71;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.footer-shop a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    color: #6e6f71;
+}
+
+.footer-legal p {
+    margin: 0;
+}
+
+.footer-legal ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.footer-legal li {
+    border-right: 1px solid #86868b;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.footer-legal li:last-child {
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.footer-locale {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* These rules kick in on smaller screens like phones to adjust the layout */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0;
+    }
+    .grid-item {
+        height: 500px;
+        padding: 38px 22px 0;
+    }
+    .grid-title {
+        font-size: 32px;
+        line-height: 1.125;
+    }
+    .logo-title {
+        min-height: 40px;
+    }
+    .logo-title img {
+        max-width: 190px;
+        max-height: 40px;
+    }
+    .grid-desc {
+        max-width: 290px;
+        font-size: 19px;
+        line-height: 1.21053;
+        margin-top: 5px;
+    }
+    .grid-item .links-wrapper {
+        margin-top: 12px;
+    }
+    .header-wrapper .internal-wrapper {
+        padding: 0 16px;
+    }
+    .header-links-wrapper ul {
+        justify-content: flex-end;
+        gap: 28px;
+    }
+    .header-links-wrapper li:not(.logo-link):not(.search-link):not(.cart-link):not(.menu-link) {
+        display: none;
+    }
+    .header-links-wrapper .logo-link {
+        margin-right: auto;
+    }
+    .menu-link {
+        display: list-item;
+    }
+    
+    .product-title {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    .brief-description {
+        max-width: 310px;
+        font-size: 21px;
+        line-height: 1.19048;
+    }
+    .btn-primary, .btn-secondary {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .entertainment-title {
+        font-size: 28px;
+    }
+    .showcase-card {
+        flex-basis: 86vw;
+        height: 430px;
+    }
+    .showcase-content {
+        left: 22px;
+        right: 22px;
+        bottom: 24px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .showcase-logo {
+        max-width: 170px;
+        max-height: 78px;
+    }
+    .showcase-copy {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .showcase-copy p {
+        flex-basis: 100%;
+        max-width: 260px;
+    }
+    .service-card {
+        flex-basis: 260px;
+        min-height: 146px;
+    }
+    .footer-directory {
+        display: block;
+        padding: 12px 0;
+    }
+    .footer-directory-column {
+        border-bottom: 1px solid #d2d2d7;
+    }
+    .footer-directory h3 {
+        margin: 0;
+        padding: 11px 0;
+    }
+    .footer-directory h3:not(:first-child) {
+        margin-top: 0;
+        border-top: 1px solid #d2d2d7;
+    }
+    .footer-directory ul {
+        padding-bottom: 10px;
+    }
+    .footer-directory li {
+        margin-bottom: 8px;
+    }
+    .footer-legal {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 9px;
+    }
+    .footer-locale {
+        margin-left: 0;
+        order: -1;
+    }
+}
