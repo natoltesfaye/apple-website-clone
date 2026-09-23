@@ -1,4 +1,7 @@
 # Apple Website Clone
+## 🌐 Live Demo
+
+[View Live Website](https://natoltesfaye.github.io/apple-website-clone/)
 
 A responsive Apple website clone created as a frontend development practice project. The project focuses on recreating the layout, styling, and visual structure of an Apple-style website using HTML and CSS.
 
